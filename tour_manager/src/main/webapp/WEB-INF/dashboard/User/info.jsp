@@ -37,13 +37,13 @@
             <a href="/home"
                class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                     class="fas fa-users"></i> Trang chủ</a>
-            <a href="#"
+<%--            <a href="#"--%>
+<%--               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i--%>
+<%--                    class="fas fa-project-diagram me-2"> Đặt chỗ của tôi</i>--%>
+<%--            </a>--%>
+            <a href="/order"
                class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-project-diagram me-2"> Đặt chỗ của tôi</i>
-            </a>
-            <a href="#"
-               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-receipt"></i> Danh sách giao dịch</a>
+                    class="fas fa-receipt"></i> Danh sách đơn đặt</a>
 
             <a href="/logout"
                class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i

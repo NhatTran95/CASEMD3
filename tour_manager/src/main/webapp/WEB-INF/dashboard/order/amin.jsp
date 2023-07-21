@@ -32,7 +32,7 @@
     <div class="list-group list-group-flush my-3">
       <a href="/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold "><i
               class="fas fa-user"></i> Tài Khoản</a>
-      <a href="orderlist.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
+      <a href="/order" class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
               class="fas fa-project-diagram me-2"></i>Quản lý Đơn
       </a>
       <a href="/tours" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
@@ -72,49 +72,25 @@
 
             <thead>
             <tr>
-              <th scope="col" width="50">#</th>
+              <th scope="col">Tên khách hàng</th>
               <th scope="col">Tên Tour</th>
-              <th scope="col">Khách hàng</th>
-              <th scope="col">Giá</th>
-              <th scope="col">Trạng thái</th>
+              <th scope="col">Số vé</th>
+              <th scope="col">Giá vé</th>
+              <th scope="col">Total</th>
+              <th scope="col">Ngày đặt</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Tour</td>
-              <td>Nhân</td>
-              <td>2.000.000</td>
-              <td>Chưa xử lý</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Tour</td>
-              <td>Nhân</td>
-              <td>2.000.000</td>
-              <td>Chưa xử lý</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Tour</td>
-              <td>Nhân</td>
-              <td>2.000.000</td>
-              <td>Đã xử lý</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Tour</td>
-              <td>Nhân</td>
-              <td>2.000.000</td>
-              <td>Đã xử lý</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Tour</td>
-              <td>Nhân</td>
-              <td>2.000.000</td>
-              <td>Chưa xử lý</td>
-            </tr>
+            <c:forEach items="${requestScope.orders}" var="o">
+              <tr>
+                <td>${o.user.getFullname()}</td>
+                <td>${o.tour.getDestination()}</td>
+                <td>${o.quantity}</td>
+                <td><fmt:formatNumber value="${o.price}" pattern="#,##0" /></td>
+                <td><fmt:formatNumber value="${o.total}" pattern="#,##0" /></td>
+                <td>${o.createAt}</td>
+              </tr>
+            </c:forEach>
 
             </tbody>
 

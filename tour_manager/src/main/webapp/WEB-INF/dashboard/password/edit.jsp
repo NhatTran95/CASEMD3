@@ -35,16 +35,7 @@
         <div class="list-group list-group-flush my-3">
             <a href="/user" class="list-group-item list-group-item-action bg-transparent second-text active"><i
                     class="fas fa-user"></i> Tài Khoản</a>
-            <a href="#"
-               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-users"></i> Mật khẩu</a>
-            <a href="#"
-               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-project-diagram me-2"> Đặt chỗ của tôi</i>
-            </a>
-            <a href="#"
-               class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
-                    class="fas fa-receipt"></i> Danh sách giao dịch</a>
+
 
             <a href="/logout"
                class="list-group-item list-group-item-action bg-transparent text-danger fw-bold"><i

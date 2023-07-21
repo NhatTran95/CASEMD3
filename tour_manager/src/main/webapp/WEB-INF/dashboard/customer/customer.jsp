@@ -31,7 +31,7 @@
         <div class="list-group list-group-flush my-3">
             <a href="/admin" class="list-group-item list-group-item-action bg-transparent second-text fw-bold "><i
                     class="fas fa-user"></i> Tài Khoản</a>
-            <a href="orderlist.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+            <a href="/order" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                     class="fas fa-project-diagram me-2"></i>Quản lý Đơn
             </a>
             <a href="/tours" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
